@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://0emb5p7yi5hu"
-path="res://.godot/imported/RecMonoDuotone-Regular-1.085.ttf-ad7996ff1940b8d334772714db49f358.fontdata"
+path="res://.godot/imported/RecMonoDuotone-Regular-1.085.ttf-8bf454913cb3e50c872f070dedb824b6.fontdata"
 
 [deps]
 
-source_file="res://RecMonoDuotone-Regular-1.085.ttf"
-dest_files=["res://.godot/imported/RecMonoDuotone-Regular-1.085.ttf-ad7996ff1940b8d334772714db49f358.fontdata"]
+source_file="res://Assets/RecMonoDuotone-Regular-1.085.ttf"
+dest_files=["res://.godot/imported/RecMonoDuotone-Regular-1.085.ttf-8bf454913cb3e50c872f070dedb824b6.fontdata"]
 
 [params]
 

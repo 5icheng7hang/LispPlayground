@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://do78mwbi4kejr"]
 
-[ext_resource type="Script" path="res://Console.gd" id="1_btm5f"]
-[ext_resource type="PackedScene" uid="uid://x5jmoe6je48s" path="res://lisp_interpreter.tscn" id="1_ksg82"]
-[ext_resource type="FontFile" uid="uid://0emb5p7yi5hu" path="res://RecMonoDuotone-Regular-1.085.ttf" id="3_8iscn"]
-[ext_resource type="FontFile" uid="uid://6h7twilrc1lv" path="res://RecMonoSemicasual-Regular-1.085.ttf" id="4_r83yh"]
+[ext_resource type="Script" path="res://Srcs/Console.gd" id="1_btm5f"]
+[ext_resource type="PackedScene" uid="uid://x5jmoe6je48s" path="res://Scenes/lisp_interpreter.tscn" id="1_ksg82"]
+[ext_resource type="FontFile" uid="uid://0emb5p7yi5hu" path="res://Assets/RecMonoDuotone-Regular-1.085.ttf" id="3_8iscn"]
+[ext_resource type="FontFile" uid="uid://6h7twilrc1lv" path="res://Assets/RecMonoSemicasual-Regular-1.085.ttf" id="4_r83yh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whh0b"]
 bg_color = Color(0.0941176, 0.0941176, 0.0941176, 1)

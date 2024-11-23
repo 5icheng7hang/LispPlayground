@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://6h7twilrc1lv"
-path="res://.godot/imported/RecMonoSemicasual-Regular-1.085.ttf-59ed50f20e1c69356cf80cbfca2c49ff.fontdata"
+path="res://.godot/imported/RecMonoSemicasual-Regular-1.085.ttf-adbff9b0160e128a2c505db36c4a44c4.fontdata"
 
 [deps]
 
-source_file="res://RecMonoSemicasual-Regular-1.085.ttf"
-dest_files=["res://.godot/imported/RecMonoSemicasual-Regular-1.085.ttf-59ed50f20e1c69356cf80cbfca2c49ff.fontdata"]
+source_file="res://Assets/RecMonoSemicasual-Regular-1.085.ttf"
+dest_files=["res://.godot/imported/RecMonoSemicasual-Regular-1.085.ttf-adbff9b0160e128a2c505db36c4a44c4.fontdata"]
 
 [params]
 
