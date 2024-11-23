@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://x5jmoe6je48s"]
+
+[ext_resource type="Script" path="res://lisp_interpreter.gd" id="1_u3mpm"]
+
+[node name="LispInterpreter" type="Node"]
+script = ExtResource("1_u3mpm")

@@ -1,0 +1,103 @@
+[gd_scene load_steps=5 format=3 uid="uid://do78mwbi4kejr"]
+
+[ext_resource type="Script" path="res://Console.gd" id="1_btm5f"]
+[ext_resource type="PackedScene" uid="uid://x5jmoe6je48s" path="res://lisp_interpreter.tscn" id="1_ksg82"]
+[ext_resource type="FontFile" uid="uid://0emb5p7yi5hu" path="res://RecMonoDuotone-Regular-1.085.ttf" id="3_8iscn"]
+[ext_resource type="FontFile" uid="uid://6h7twilrc1lv" path="res://RecMonoSemicasual-Regular-1.085.ttf" id="4_r83yh"]
+
+[node name="Console" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_btm5f")
+
+[node name="LispInterpreter" parent="." instance=ExtResource("1_ksg82")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator3" type="HSeparator" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="ConsoleLines" type="TextEdit" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_8iscn")
+theme_override_font_sizes/font_size = 18
+editable = false
+wrap_mode = 1
+
+[node name="HSeparator5" type="HSeparator" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="InputLine" type="LineEdit" parent="HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_8iscn")
+theme_override_font_sizes/font_size = 18
+
+[node name="SendButton" type="Button" parent="HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+theme_override_fonts/font = ExtResource("4_r83yh")
+text = "Send"
+
+[node name="HSeparator4" type="HSeparator" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="VSeparator3" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="AstViewer" type="Tree" parent="HBoxContainer/VBoxContainer/TabContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+metadata/_tab_index = 0
+
+[node name="Environment" type="ItemList" parent="HBoxContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/HBoxContainer/SendButton" to="." method="_on_send_button_pressed"]
