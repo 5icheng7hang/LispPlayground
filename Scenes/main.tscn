@@ -124,12 +124,6 @@ layout_mode = 2
 item_count = 1
 metadata/_tab_index = 1
 
-[node name="Examples" type="CodeEdit" parent="HBoxContainer/VBoxContainer/TabContainer"]
-visible = false
-layout_mode = 2
-editable = false
-metadata/_tab_index = 2
-
 [node name="HSeparator" type="HSeparator" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
